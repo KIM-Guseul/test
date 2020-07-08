@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test01</title>
+   
+</head>
+
+<body>
+
+<!--=============== background-position ==============-->
+
+   
+    <!-- site1/test.html-->
+    <!--
+   1.가로,세로 사이즈 설정
+   2.백그라운드 이미지 - padding으로 이동시킬 수 없음.
+    - background-position (위치), background-size (크기)
+   -->
+
+    <style>
+        .ic_bg {}
+
+        .ic_bg a {
+            background: url('img/ic_sns.png') no-repeat;
+            font-size: 0;
+            width: 15px;
+            height: 15px;
+
+            display: inline-block;
+            
+        }
+        .ic_bg a:nth-of-type(2) {
+        background-position: -33px 0;
+        }
+        
+        .ic_bg a:nth-of-type(3) {
+       background-position: -70px 0;
+        }
+        
+        /* 이미지 하나하나 저장하지 말고 백그라운드에 위치값 지정하면 편해.*/
+        
+    </style>
+
+    <div class="ic_bg">
+        <a href="#">facebook</a>
+        <a href="#">twitter</a>
+        <a href="#">instagram</a>
+    </div>
+    
+    <!--=============== mark/shadow ==============-->
+    
+    <style>
+        .shadow{
+            width:500px; height: 400px;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+            /* x, y, blur, color */
+        }
+        .shadow mark{
+            background: #f00;
+            color: #fff;
+        }
+    </style>
+    
+    <div class="shadow">
+        <mark>You Can</mark> get them here
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</body></html>
