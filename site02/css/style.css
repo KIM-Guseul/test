@@ -1,0 +1,198 @@
+@import url(../css/common.css);
+
+html,
+body {
+    background: none;
+}
+
+/*header,
+main {
+    width: 1140px;
+    margin: 94px auto;
+}*/
+
+header {}
+
+header .h_1 {
+    width: 1140px;
+    margin: 94px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .h_1 h1 {
+    font-size: 40px;
+
+}
+
+header .h_1 h1 a {}
+
+header .h_1 nav {}
+
+header .h_1 nav ul {
+    /* display: flex;
+    justify-content: space-between*/
+}
+
+header .h_1 nav ul li {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+
+
+
+header .h_1 nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+
+
+header .h_1 nav ul li a:after {
+    content: '';
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    
+    transition: .5s;
+
+
+
+}
+
+header .h_1 nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/*=================================================*/
+
+
+
+main {width: 1140px;
+    margin: 94px auto;}
+
+main .m_1 {}
+
+
+main .m_1 article {
+    position: relative;
+}
+
+main .m_1 article img {
+    width: 100%;
+
+
+}
+
+main .m_1 article h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 90px;
+    font-weight: 800;
+
+    color: #fff;
+
+}
+
+main .m_1 article:hover h2 {
+    color: darkcyan;
+}
+
+
+main .m_1 span {
+    position: absolute;
+    transform: rotate(270deg) translate(40%, -200%);
+    transform-origin: left bottom;
+
+    /*
+    display: inline-block;
+*/
+
+}
+
+main .m_2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .m_2 article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main .m_2 article h3 {
+    font-family: OpenSans;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main .m_2 article p {
+    margin: 20px 0;
+
+    font-family: OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+main .m_2 article a {
+    font-family: MyriadPro;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+main .m_2 figure {
+    margin: 0;
+}
+
+main .m_2 figure figcaption {
+    text-align: right;
+    font-family: OpenSans;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+main .m_2 figure img {}
+
+/*=================================================*/
+
+
+footer {
+    border: solid 1px #959595;
+    background-color: #434343;
+
+}
+
+footer p {
+    margin: 0 auto;
+    width: 1668px;
+    height: 82px;
+    color: #bcbcbc;
+
+    text-align: center;
+    line-height: 82px;
+}
